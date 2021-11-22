@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com"> 
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" type="text/css" href="css/index.css">
+
+  <title>Khang Tran - About me</title>
+</head>
+<body>
+
+  <div id="main-container">
+    
+    <!-- Title section -->
+
+    <div class="title-section">
+      <h1 class="title">Tran Nguyen An Khang</h1>
+      <h2 class="subtitle">A product designer who loves to make stunning and awesome digital products.</h2>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- Body section -->
+
+    <div class="body-section">
+      <p class="paragraph">
+        Nice to meet you! I am an entry-level product designer recently working in the software industry in a variety of roles. I perform best under the challenge of creativity and innovation. I also love improving myself with new skills and expanding my network. When I am not designing, you may find me hanging out with my Instax, watching a Premier League game, listening to a podcast, or shopping at Muji.
+      </p>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="body-section">
+      <p class="heading">USUM SOFTWARE | UX/UI DESIGN</p>
+      <p class="paragraph">Ho Chi Minh city | April - August, 2021</p>
+      <ul class="listing">
+        <li>Suggested and supported innovative ideas for functional and appealing product publications</li>
+        <li>Crafted cross-platform application wireframes, userflows, prototypes and mock-ups</li>
+        <li>Designed mobile and desktop application UI in several fields: real estate, e-commerce, food delivery, booking & travel</li>
+      </ul>
+    </div>
+
+    <div class="body-section">
+      <p class="heading">BOARDGAME VN | GRAPHIC DESIGN</p>
+      <p class="paragraph">Remote | March - July, 2020</p>
+      <ul class="listing">
+        <li>Created display materials for boardgame events and contests</li>
+        <li>Contributed to the creation of company’s products including local boardgames & comics</li>
+        <li>Designed promotional materials to be displayed on Youtube, Facebook & Instagram</li>
+      </ul>
+    </div>
+
+    <div class="body-section">
+      <p class="heading">ALIPO CREATIVE | GRAPHIC DESIGN INTERN</p>
+      <p class="paragraph">Ho Chi Minh city | September - December, 2019</p>
+      <ul class="listing">
+        <li>Established visual style guides for TVCs & viral videos in bank and social media industry</li>
+        <li>Designed retail product packagings & promotional materials</li>
+        <li>Handled portfolios & pitching credentials</li>
+      </ul>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="body-section">
+      <p class="heading">B.S DIGITAL ART & DESIGN</p>
+      <p class="paragraph">FPT University | Ho Chi Minh city | 2017 - 2021 | Full scholarship</p>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="body-section">
+      <p class="heading">TOOLS I USE</p>
+      <div class="tools-container">
+        <img src="images/about/figma.svg" class="tools">
+        <img src="images/about/sublime-text.svg" class="tools">
+        <img src="images/about/adobe-illustrator.svg" class="tools">
+        <img src="images/about/adobe-after-effects.svg" class="tools">
+        <img src="images/about/adobe-photoshop.svg" class="tools">
+        <img src="images/about/adobe-indesign.svg" class="tools">
+        <img src="images/about/adobe-xd.svg" class="tools">
+      </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="body-section">
+      <p class="heading">Get in touch with me! 👋</p>
+      <div id="email-container">
+        <div id="email-content">
+          <input id="email" type="text" value="khangtran0203.99@gmail.com" readonly></input>
+        </div>
+        <button id="confirmation-filter" onclick="copyEmail()" onmouseout="outEmail()">Copy email</button>
+      </div>
+    </div>
+
+    <div class="last-section"></div>
+
+     <!-- Main container -->
+
+  </div>
+
+  <div class="navigation-container">
+    
+    <a href="index.html" class="first-button-container">
+      <img src="images/button/avatar.png" class="first-button-thumb">
+      <span class="tooltiptext" id="ttt-about-me">About Me</span>
+    </a>
+    <div class="button-divider"></div>
+    <a href="pages/vncovi-space.html" class="button-container">
+      <img src="images/button/vncovi.space.svg" class="button-thumb">
+      <span class="tooltiptext" id="ttt-vncovi-space">vncovi.space</span>
+    </a>
+    <a href="pages/popcorn.html" class="button-container">
+      <img src="images/button/popcorn.svg" class="button-thumb">
+      <span class="tooltiptext" id="ttt-popcorn">Popcorn</span>
+    </a>
+    <div class="button-divider"></div>
+    <a href="pages/blogs.html" class="button-container">
+      <img src="images/button/blog.svg" class="button-thumb">
+      <span class="tooltiptext" id="ttt-my-blogs">My Blogs</span>
+    </a>
+    <div class="button-divider"></div>
+     <a href="https://www.linkedin.com/in/khanggtrann/" target="_blank" class="button-container">
+      <img src="images/button/linkedin.svg" class="button-thumb">
+      <span class="tooltiptext" id="ttt-mu-linkedin">My LinkedIn</span>
+    </a>
+     <a href="https://dribbble.com/khanggtrann" target="_blank" class="button-container">
+      <img src="images/button/dribbble.svg" class="button-thumb">
+      <span class="tooltiptext" id="ttt-my-dribbble">My Dribbble</span>
+    </a>
+
+  </div>
+
+  <!-- Script -->
+
+  <script type="text/javascript">
+      function copyEmail(){
+        var copy = "khangtran0203.99@gmail.com";
+
+        navigator.clipboard.writeText(copy);
+
+        var confirm = document.getElementById("confirmation-filter");
+        confirm.innerHTML = "Copied!";
+      }
+    </script>
+
+</body>
+</html>
