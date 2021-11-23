@@ -34,13 +34,6 @@ html, body{
   background-color: var(--light-gray);
   margin: 0 20px 0 20px;
 }
-
-/*website-thumb*/
-
-#website-thumb{
- /* display: none;*/
-}
-
 /*--------------------------navigation--------------------------*/
 
 .navigation-container{
