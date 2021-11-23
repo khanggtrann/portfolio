@@ -226,6 +226,9 @@ html, body{
   text-align: left;
   color: var(--black);
 }
+.subheading .cta-link{
+  color: #5D5FEF;
+}
 .listing li{
   font-size: 20px;
   font-style: normal;
@@ -259,7 +262,6 @@ html, body{
   top: 0;
   left: 0;
   box-sizing: border-box;
-  visibility: hidden;
   z-index: 1px;
   font-size: 20px;
   font-weight: 400;
@@ -273,7 +275,7 @@ html, body{
 }
 #email-container:hover > #confirmation-filter{
   visibility: visible;
-  transform: skew(0) rotate(0) translateY(0px);;
+  transform: skew(0) rotate(0) translateY(0px);
 }
 #email-content{
   display: flex;
@@ -303,6 +305,70 @@ html, body{
   letter-spacing: 0em;
   text-align: left;
   text-align: center;
+}
+#mobile-email-container{
+  position: relative;
+  overflow: hidden;
+  width: 300px;
+  display: none;
+}
+#mobile-confirmation-filter{
+  width: 300px;
+  height: 52px;
+  background-color: var(--white);
+  border: 2px dashed #E790EE;
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  z-index: 1px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  color: var(--black);
+  cursor: pointer;
+  transition: all 0.3s;
+}
+#mobile-email-content{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  width: 300px;
+  height: 52px;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+#mobile-email{
+  color: var(--black);
+  background-color: var(--white);
+  border: 2px dashed #E790EE;
+  width: 400px;
+  height: 52px;
+  margin: 0;
+  display: block;
+  padding: 14px;
+  box-sizing: border-box;
+  cursor: pointer;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  text-align: center;
+  opacity: 0;
+}
+#mobile-email-pointer{
+  display: none;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: var(--gray);
+  margin: 0 0 12px 0;
 }
 .last-section{
   width: 100%;
@@ -413,20 +479,13 @@ html, body{
     height: 100px;   
   }
   #email-container{
-    width: 300px;
+    display: none;
   }
-  #confirmation-filter{
-    width: 300px;
-    font-size: 16px;
-    line-height: 20px;
+  #mobile-email-container{
+    display: block;
   }
-  #email-content{
-    width: 300px;
-  }
-  #email{
-    width: 300px;
-    font-size: 16px;
-    line-height: 20px;
+  #mobile-email-pointer{
+  display: block;
   }
   .image-group{
     display: flex;

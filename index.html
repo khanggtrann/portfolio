@@ -36,6 +36,14 @@
     <div class="divider"></div>
 
     <div class="body-section">
+      <p class="heading">See my projects</p>
+      <h2 class="subheading"><a href="pages/vncovi-space.html" class="cta-link">vncovi.space</a></h2>
+      <h2 class="subheading"><a href="pages/popcorn.html" class="cta-link">Popcorn</a></h2>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="body-section">
       <p class="heading">USUM SOFTWARE | UX/UI DESIGN</p>
       <p class="paragraph">Ho Chi Minh City | April - August, 2021</p>
       <ul class="listing">
@@ -91,11 +99,19 @@
 
     <div class="body-section">
       <p class="heading">Get in touch with me! 👋</p>
+      <p class="paragraph" id="mobile-email-pointer">Press my email down here to copy. 👇</p>
       <div id="email-container">
         <div id="email-content">
           <input id="email" type="text" value="khangtran0203.99@gmail.com" readonly></input>
         </div>
         <button id="confirmation-filter" onclick="copyEmail()" onmouseout="outEmail()">Click to copy email</button>
+      </div>
+
+      <div id="mobile-email-container">
+        <div id="mobile-email-content">
+          <input id="mobile-email" type="text" value="khangtran0203.99@gmail.com" readonly></input>
+        </div>
+        <button id="mobile-confirmation-filter" onclick="copymobileEmail()" onmouseout="outmobileEmail()">khangtran0203.99@gmail.com</button>
       </div>
     </div>
 
@@ -151,6 +167,16 @@
         var confirm = document.getElementById("confirmation-filter");
         confirm.innerHTML = "Yay! Email copied!";
       }
+
+      function copymobileEmail(){
+        var copy = "khangtran0203.99@gmail.com";
+
+        navigator.clipboard.writeText(copy);
+
+        var confirm = document.getElementById("mobile-confirmation-filter");
+        confirm.innerHTML = "Yay! Email copied!";
+      }
+
       function openNav(){
         var nav = document.getElementById("nav");
         var btn = document.getElementById("btn");
