@@ -175,6 +175,17 @@ html, body{
 .body-section{
   margin: 36px 20px;
 }
+.flex-column{
+  display: flex;
+  flex-direction: row;
+}
+.column-1{
+  width: calc(50% - 10px);
+  margin-right: 20px;
+}
+.column-2{
+  width: calc(50% - 10px);
+}
 .paragraph{
   font-size: 20px;
   font-style: normal;
