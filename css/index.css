@@ -99,7 +99,7 @@ html, body{
   position: absolute;
   z-index: 1;
   top: 12px;
-  right: 110%;
+  right: 160%;
   transition: opacity 0.3s;
   font-size: 14px;
   font-style: normal;
